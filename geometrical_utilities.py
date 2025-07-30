@@ -310,7 +310,7 @@ def cartesian2polar(x,y):
         tuple: The polar coordinates (r, alpha), where alpha is in radians.
     """
     r = math.sqrt(x**2+y**2) # Radial distance
-    alpha = np.arctan2(y, x) # Angle in radians
+    alpha = float(np.arctan2(y, x)) # Angle in radians
     return(r, alpha)
 
 # Convert spherical coordinates to Cartesian coordinates
